@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OLY Hotels</title>
+    <link rel="stylesheet" href="/dist/css/login.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <ul class="navbar-middle">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="roomtypes.html">Room Types</a></li>
+            <li><a href="Bill.html">Booking</a></li>
+        </ul>
+    </header>
+    <main>
+        <span class="backgroundSpheres">
+            <img src="/img/1.svg">
+            <img src="/img/2.svg">
+            <img src="/img/3.svg">
+        </span>
+        <div class="container">
+            <div class="card front-face">
+                <img src="./img/visa.png" class="visa">
+                <img src="./img/chip.png" class="chip">
+                <img src="./img/wireless.png" class="wireless">
+                <span class="card-details">
+                    <form action="/" method="get">
+                        <span class="card-number">
+                            <h6 for="cardHolderNumber" id="cardNumberLabel">Card Number</h6>
+                            <h6 id="cardNumberError"></h6>
+                            <input type="tel" inputmode="numeric" pattern="[0-9]{16}" autocomplete="cc-number"
+                                maxlength="16" id="cardHolderNumber" onkeyup="validateCardNumber()"
+                                title="Please enter a valid number" required>
+                        </span>
+                        <span class="card-dob">
+                            <h6 for="cardHolderDob">Date of Birth</h6>
+                            <input type="date" placeholder="DOB" id="cardHolderDob">
+                        </span>
+                        <span class="card-name">
+                            <h6 for="cardHolderName" id="cardNameLabel">Card Holder</h6>
+                            <h6 id="cardNameError"></h6>
+                            <input type="text" id="cardHolderName" pattern="[A-Z]{4,}" onkeyup="validateCardName()"
+                                title="Please enter a valid capitalized full name and at least 4 characters" onkeyup="">
+                        </span>
+                        <button type="submit" class="loginBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg></button>
+                    </form>
+                </span>
+
+            </div>
+            <div class="card back-face">
+                <!-- <h6>For customer service call +20 109 559 1904</h6> -->
+                <span class="magnetic-strip"></span>
+                <select name="roomtypes">
+                    <option value="ClassicRoom">Classic Room</option>
+                    <option value="SuperiorRoom">Superior Room</option>
+                    <option value="JuniorRoom">Junior Room</option>
+                    <option value="GoldenRoom">Golden Room</option>
+                </select>
+                <input type="number" placeholder="Number of Adults" min="1" id="numberOfAdults">
+                <a id="check" href="Bill.html">Check Out</a>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>

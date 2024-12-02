@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Foldit:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: black;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3em 10em 3em 15em;
+    z-index: 999;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    .navbar-middle {
+        display: flex;
+
+        li {
+            margin: 0 2em;
+
+            a {
+                color: white;
+                font-family: 'Bungee Spice', sans-serif;
+            }
+
+            a:hover {
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 6em;
+    top: 45%;
+    // left: 17%;
+    // font-family: 'Foldit', sans-serif;
+    font-family: 'Bungee Spice', sans-serif;
+    left: 18%;
+}
+
+h1 span {
+    margin-left: 5.5em;
+}
