@@ -1,4 +1,4 @@
-# OLY'S Hotel Interactive Reservation Website
+# OLY'S Interactive Hotel Reservation Website
 OLY'S is an interactive hotel reservation platform featuring a 3D globe interface that lets users explore and book hotels by simply clicking on their desired country. Each click reveals curated hotel options for the selected destination, ensuring a personalized travel experience. The platform includes a secure billing page with real-time credit card validation for seamless and reliable payments.
 ## Homepage
 ![homepage](https://github.com/user-attachments/assets/8e3859bc-3dec-4e8e-a077-96509165c153)
